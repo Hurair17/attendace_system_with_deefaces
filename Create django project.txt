@@ -1,0 +1,8 @@
+#create a python project name mysite
+django-admin startproject mysite
+
+#run project 
+py manage.py runserver 8080
+
+#Create a polls app inside a project
+py manage.py startapp polls
