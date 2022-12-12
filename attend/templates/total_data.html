@@ -1,0 +1,61 @@
+<style>
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<h1>Attendance Data</h1>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Date</th>
+
+</tr>
+
+{% for i in employee %}
+<tr style="text-align: center;">
+    <td>{{i.name}}</td>
+    <td>{{i.date}}</td>
+</tr>
+{% endfor %}
+</table>
+
+
+
+
+
+
+<!-- For Showing data of csv file -->
+<!-- <table>
+  <tr><th>Names</th><th>Date</th></tr>
+
+    <tr>
+      {% for col in df.columns %}
+        <td>
+          {{col}}
+        </td>
+      {% endfor %}
+    </tr>
+      {% for index, row in df.iterrows %}
+        <tr>
+          {% for cell in row %}
+            <td>
+              {{cell}}
+            </td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+  </table> -->
